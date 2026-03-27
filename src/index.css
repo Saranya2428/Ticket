@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* Container spacing */
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e3a8a;
+  color: white;
+  padding: 15px 30px;
+}
+
+nav h2 {
+  font-weight: 600;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Ticket Card */
+.ticket-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Status colors */
+.status-open {
+  color: green;
+  font-weight: bold;
+}
+
+.status-progress {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-closed {
+  color: red;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn-success {
+  background-color: #16a34a;
+  color: white;
+}
+
+/* Form */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Empty state */
+.empty-message {
+  color: gray;
+  font-style: italic;
+}
